@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Konane.iml" filepath="$PROJECT_DIR$/.idea/Konane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Konane_Game/Konane_Game.iml" filepath="$PROJECT_DIR$/Konane_Game/Konane_Game.iml" />
+    </modules>
+  </component>
+</project>
