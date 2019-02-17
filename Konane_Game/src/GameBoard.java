@@ -54,6 +54,7 @@ public class GameBoard {
     public void removePiece(int r, int c){
         gameboard[r][c] = null;
         // Set the last move made
+
     }
 
     /**
