@@ -1,6 +1,6 @@
 /**
- * Game piece is a class used to represent the game pieces on the board for konane
- * Each game piece has a color and a unique id used for identification
+ * Game piece is a class used to represent the game pieces on the board
+ * Each game piece has a color and a unique id
  *
  * @author Albert Garcia
  * @version 1.0
@@ -19,8 +19,7 @@ public class GamePiece {
      * @param c column on the board
      * @param col black or white piece
      */
-    public GamePiece(int r, int c, Color col)
-    {
+    public GamePiece(int r, int c, Color col){
         this.id = next_id;
         next_id++;
         this.row = r;
@@ -33,8 +32,7 @@ public class GamePiece {
      * @param r row coordinate
      * @param c column coordinate
      */
-    public void update_coordinates(int r, int c)
-    {
+    public void update_coordinates(int r, int c){
         this.row = r;
         this.col = c;
     }
@@ -43,8 +41,7 @@ public class GamePiece {
      * Method returns the id of the game piece
      * @return game piece id
      */
-    public int get_id()
-    {
+    public int get_id(){
         return this.id;
     }
 
@@ -52,8 +49,7 @@ public class GamePiece {
      * Method returns game piece row position
      * @return game piece row position
      */
-    public int get_row()
-    {
+    public int get_row(){
         return this.row;
     }
 
@@ -61,8 +57,7 @@ public class GamePiece {
      * Method returns the column position of the game piece
      * @return game piece column position
      */
-    public int get_column()
-    {
+    public int get_column(){
         return this.col;
     }
 
@@ -70,13 +65,12 @@ public class GamePiece {
      * Method returns color of game piece as a string
      * @return game piece color
      */
-    public String get_color()
-    {
+    public String get_color(){
         String clr = "";
         if (color == Color.BLACK)
-            clr = "black";
+            clr = "B";
         else if(color == Color.WHITE)
-            clr = "white";
+            clr = "W";
         return clr;
     }
 
@@ -84,8 +78,7 @@ public class GamePiece {
      * Returns the coordinates of this piece in the form of a string
      * @return the row and column of the game piece
      */
-    public String get_coordinates()
-    {
+    public String get_coordinates(){
         return "<" + this.row + "," + this.col + ">";
     }
 }
